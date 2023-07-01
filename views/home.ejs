@@ -1,0 +1,20 @@
+<%- include("partials/header"); %>
+
+<h1>Hello</h1>
+<p> <%= loremIpsum %></p>
+
+
+
+
+<% posts.forEach(function(post){ %>
+  <h1> <%= Datum %></h1>
+  <h2> <%= post.post.title %></h2> 
+  <p> 
+    <%= post.post.post.substring(0,300) + " ..." %>
+    <a href="/posts/<%= post._id %>">Read more</a>
+  </p>
+  
+<% }); %>
+
+
+<%- include("partials/footer"); %>
