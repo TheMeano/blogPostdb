@@ -9,7 +9,7 @@ const { getDate } = require(__dirname + "/date.js");
 const methodOverride = require("method-override");
 
 
-const uri = "mongodb+srv://Meano:1aqr1hPThjH69uKu@cluster0.3nmf3fk.mongodb.net/BlogPost?retryWrites=true&w=majority";
+const uri = "<<YOUR MONGO DB CONNECTION STRING>>";
 const client = new MongoClient(uri, { useNewUrlParser: true });
 
 const date = require(__dirname + "/date.js")
